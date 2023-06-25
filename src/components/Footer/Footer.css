@@ -1,0 +1,42 @@
+.footer {
+    margin: 125px 0 80px 0;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .footer {
+  margin-top: 75px;
+    }
+  }
+
+  .footer__link {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #656d72;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+  
+  .footer__link:hover {
+    color: #7e74f1;
+  }
+
+  .footer__text {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #656d72;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+    text-decoration: none;
+  }
+  

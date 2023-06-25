@@ -1,0 +1,173 @@
+.hero {
+    max-width: 1280px;
+    /* height: calc(100vh - 500px) ; */
+    margin: 0 auto;
+    padding: 151px 40px 151px 40px;
+    /* min-height: 496px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    /* position: relative; */
+    /* overflow: hidden; */
+  }
+  
+  .hero__before-name{
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 7.5px;
+    color: #656d72;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .hero__description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #232e35;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .hero__info {
+    max-width: 538px;
+  }
+
+  .hero__name {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    color: #232e35;
+    margin: 0;
+    padding: 16px 0 32px 0;
+  }
+
+  .hero__photo {
+    width: 360px;
+    height: 360px;
+    padding: 0;
+  }
+  
+
+  .hero__second-name {
+    color: #7e74f1;
+  }
+
+  .hero__skill {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #232e35;
+    display: inline-block;
+    transition: 0.2s;
+  
+  }
+  
+  .hero__skill:hover{
+    transform: translateY(-4px)
+  }
+
+  .hero__skills{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    gap: 26px;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    /* background: #fbfbfb; */
+}
+
+
+
+  @media screen and (max-width: 1080px) {
+    .hero {
+      flex-direction: column;
+      min-height: 696px;
+      padding-top: 81px;
+      gap: 80px
+    }
+
+    .hero__info {
+        max-width: 1080px;
+      }
+
+      .hero__photo {
+        width: 420px;
+        height: 420px;
+      }
+
+  }
+  
+  @media screen and (max-width: 767px) {
+    .hero {
+      padding: 21px 10px;
+    }
+
+    .hero__name {
+        padding: 6px 0 12px 0;
+      }
+
+
+      .hero__description {
+        padding-bottom: 10px;
+      }
+
+    .hero__photo {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+      }
+
+       .hero__skills {
+        padding:  0;
+      } 
+
+  }
+
+
+  
+  /* @media screen and (max-width: 767px) {
+    .hero__description {
+    }
+  } */
+
+
+
+
+
+
+/* .hero__square-pic {
+    width: 336px;
+    height: 400px;
+    background: #7e74f1;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 156px;
+    right: 40px;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .hero__square-pic {
+      margin: 0 auto;
+      bottom: 85px;
+      left: 0;
+      right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .hero__square-pic {
+    }
+  } */

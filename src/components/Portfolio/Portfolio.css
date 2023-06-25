@@ -1,0 +1,92 @@
+.portfolio {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px 176px 40px;
+  }
+
+  .portfolio__button {
+    width: 40px;
+    height: 40px;
+  
+    border-radius: 16px;
+    border: none;
+    background: #eae6fe;
+    /* transform: rotate(-180deg); */
+  }
+
+  .portfolio__button_type_left {
+    /* background-image: url('../../../../images/button_left.png');
+    background: #eae6fe;
+    background-size: contain; */
+    opacity: 0.5;
+    /* background: url('../../../../images/button_left.png') no-repeat center / contain;
+    background-origin: content-box; */
+  }
+
+  .portfolio__button_type_right {
+    /* background-image: ; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+  
+    /* background: url('../../../../images/button_right.png') no-repeat center / 5px 10px;
+    background-origin: content-box; */
+  }
+
+  .portfolio__buttons{
+    width: 96px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .portfolio__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .portfolio__pre-header{
+        text-transform: uppercase;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 7.5px;
+        color: #656d72;
+        padding-top: 114px;
+        margin: 0 auto;
+        max-width: 1280px;
+      }
+
+      .portfolio__text{
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 55px;
+        color: #232e35;
+        max-width: 1280px;
+        margin: 0;
+        padding: 16px 0 32px 0;
+      }
+
+      .portfolio__work {
+        width: 300px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 16px;
+      }
+
+      .portfolio__works {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        gap: 60px;
+        padding: 14px 0 0 0;
+      }
+
+      

@@ -1,0 +1,14 @@
+.burger{
+display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .burger {
+    width: 26px;
+    height: 14px;
+    display: block;
+    border:none;
+    padding: 0;
+    background-color: white;
+  }
+}

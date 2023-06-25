@@ -1,0 +1,7 @@
+.burger__line{
+display: block;
+height: 2px;
+width: 100%;
+background-color: #232e35;
+transition: all 0.3s ease-in-out;
+}
