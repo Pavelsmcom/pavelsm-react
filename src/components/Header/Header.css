@@ -1,5 +1,5 @@
 .head {
-    max-width: 1280px;
+    width: 1280px;
     margin: 0 auto;
     padding: 41px 40px 0 40px;
     display: flex;
@@ -9,6 +9,6 @@
   
   @media screen and (max-width: 767px) {
     .head {
-      padding: 41px 10px 0 10px;
+      padding: 41px 20px 0 20px;
     }
   }
