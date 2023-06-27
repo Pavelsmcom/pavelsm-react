@@ -1,15 +1,79 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav>
-          <ul className="navigation">
-          <li><a href="#Home" className="navigation__link">Home</a></li>
-            <li><a href="#mySkills" className="navigation__link">My Skills</a></li>
-            <li><a href="#portfolio" className="navigation__link">Portfolio</a></li>
-            <li><a href="#workExp" className="navigation__link">Work Experiences</a></li>
-            <li><a href="#contact" className="navigation__link">Contact</a></li>
-          </ul>
-        </nav>
-      );
+      <ul className="navigation">
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
+            }
+          >
+            Home
+            <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/skill"
+            className={({ isActive }) =>
+              `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
+            }
+          >
+            My Skills
+            <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/portfolio"
+            className={({ isActive }) =>
+              `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
+            }
+          >
+            Portfolio
+            <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/workExp"
+            className={({ isActive }) =>
+              `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
+            }
+          >
+            Work Experiences
+            <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
+            }
+          >
+            Contact
+            <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Navbar;
+
+{
+  /* <NavLink
+  onClick={closeBurgerMenu}
+  to="/"
+  className={({ isActive }) =>
+    `navigation-films__link ${isActive ? "navigation-films__link navigation-films__link_active" : ""}`
+  }
+>
+  Главная
+</NavLink>; */
+}
