@@ -6,10 +6,10 @@
 
 /* @import url(./blocks/page/page.css); */
 /* header */
-@import url(./components/Header/Header.css);
+/* @import url(./components/Header/Header.css); */
 
 /* logo */
-@import url(./components/Logo/Logo.css);
+/* @import url(./components/Logo/Logo.css); */
 
 /* burger */
 @import url(./blocks/burger/burger.css);
@@ -23,13 +23,13 @@
 @import url(./blocks/burger/__block/burger__block.css);
 
 /* Navbar */
-@import url(./components/Navbar/Navbar.css);
+/* @import url(./components/Navbar/Navbar.css); */
 
 /* @import url(./blocks/navigation/navigation.css);
 @import url(./blocks/navigation/__link/navigation__link.css); */
 
 /* resume */
-@import url(./components/Resume/Resume.css);
+/* @import url(./components/Resume/Resume.css); */
 
 /* 
 @import url(./blocks/resume/resume.css);
@@ -37,13 +37,13 @@
 @import url(./blocks/resume/__circle-animation/resume__circle-animation.css); */
 
 /* hero */
-@import url(./components/Hero/Hero.css);
+/* @import url(./components/Hero/Hero.css); */
 
 /* skills */
-@import url(./components/Skills/Skills.css);
+/* @import url(./components/Skills/Skills.css); */
 
 /* portfolio */
-@import url(./components/Portfolio/Portfolio.css);
+/* @import url(./components/Portfolio/Portfolio.css); */
 
 /* education */
 @import url(./components/Education/Education.css);

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Hero.css";
+
 import photo from "../../images/hero.png";
 import telegram from "../../images/telegram.png";
 import github from "../../images/github.png";
@@ -13,10 +15,9 @@ function Hero() {
           Pavel <span className="hero__second-name">Melekhin</span>
         </h1>
         <p className="hero__description">
-          I am excited about the development process and the opportunity to
-          create new interesting projects, as well as solve complex problems.
-          Previously, I led a team and created medical devices, now I apply this
-          experience on the web.
+          I am excited about the development process and the opportunity to create new interesting projects, as well as
+          solve complex problems. Previously, I led a team and created medical devices, now I apply this experience on
+          the web.
         </p>
         <nav>
           <ul className="hero__skills">
@@ -26,11 +27,7 @@ function Hero() {
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/Pavelsmcom"
-                rel="noreferrer"
-                target="_blank"
-              >
+              <a href="https://github.com/Pavelsmcom" rel="noreferrer" target="_blank">
                 <img className="hero__skill" src={github} alt="GitHub" />
               </a>
             </li>
@@ -41,10 +38,7 @@ function Hero() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <img
-                  src="https://www.codewars.com/users/ElvenSky/badges/micro"
-                  alt="CodeWars"
-                />
+                <img src="https://www.codewars.com/users/ElvenSky/badges/micro" alt="CodeWars" />
               </a>
             </li>
           </ul>

@@ -1,3 +1,5 @@
+import "./Navbar.css";
+
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
@@ -17,7 +19,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
-            to="/skill"
+            to="/skills"
             className={({ isActive }) =>
               `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
             }
@@ -44,18 +46,7 @@ function Navbar() {
               `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
             }
           >
-            Work Experiences
-            <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
-            }
-          >
-            Contact
+            Experience
             <span className="navigation__span" data-content="Link Hover" aria-hidden="true"></span>
           </NavLink>
         </li>
@@ -66,8 +57,8 @@ function Navbar() {
 
 export default Navbar;
 
-{
-  /* <NavLink
+//{
+/* <NavLink
   onClick={closeBurgerMenu}
   to="/"
   className={({ isActive }) =>
@@ -76,4 +67,4 @@ export default Navbar;
 >
   Главная
 </NavLink>; */
-}
+//}

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    gap: 56px;
+    gap: 40px;
     padding: 15px 0 15px 0;
     margin: 0;
   }
@@ -29,7 +29,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: #232e35;
+    background-color: #656d72;
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 400ms ease-in-out;
@@ -39,13 +39,17 @@
     transform: scaleX(1);
   }
 
+  .navigation__link_active {
+    cursor: default;
+  }
+
   .navigation__link:hover .navigation__span {
     transform: scaleX(1);
   }
   
   @media screen and (max-width: 1080px) {
     .navigation {
-      gap: 26px;
+      gap: 16px;
     }
   }
   

@@ -1,3 +1,5 @@
+import "./Logo.css";
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 const MotionLink = motion(Link);
