@@ -7,7 +7,7 @@ function Burger({ click, isBurgerOpen }) {
 
   return (
     <>
-      <button className="burger" onClick={handleClick}>
+      <button className="burger" onClick={handleClick} aria-label="burger button">
         <span
           className={
             isBurgerOpen ? "burger__line burger__line_position_1_open" : "burger__line burger__line_position_1"

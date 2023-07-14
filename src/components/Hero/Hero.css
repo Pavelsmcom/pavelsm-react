@@ -59,7 +59,19 @@
 .hero__skill {
   display: inline-block;
   transition: 0.2s;
-  max-width: 36px;
+  width: 36px;
+  height: 36px;
+}
+
+.hero__skill-codewars {
+  display: inline-block;
+  transition: 0.2s;
+  width: 120px;
+  height: 20px;
+}
+
+.hero__skill-codewars:hover {
+  transform: translateY(-4px);
 }
 
 .hero__skill:hover {

@@ -34,7 +34,7 @@ function Hero() {
             <li>
               <a
                 href="https://www.codewars.com/users/ElvenSky"
-                className="hero__skill"
+                className="hero__skill-codewars"
                 rel="noreferrer"
                 target="_blank"
               >
