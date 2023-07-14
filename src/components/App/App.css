@@ -1,11 +1,8 @@
-.page{
-    min-height: 100vh;
+@import url(../../vendor/normalize.css);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */ 
-    /* align-items: stretch;*/
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

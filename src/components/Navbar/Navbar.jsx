@@ -2,12 +2,13 @@ import "./Navbar.css";
 
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ isBurgerOpen, closeBurgerMenu }) {
   return (
     <nav>
-      <ul className="navigation">
+      <ul className={isBurgerOpen ? "navigation_burger navigation" : "navigation navigation_header"}>
         <li>
           <NavLink
+            onClick={closeBurgerMenu}
             to="/"
             className={({ isActive }) =>
               `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
@@ -19,6 +20,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            onClick={closeBurgerMenu}
             to="/skills"
             className={({ isActive }) =>
               `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
@@ -30,6 +32,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            onClick={closeBurgerMenu}
             to="/portfolio"
             className={({ isActive }) =>
               `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
@@ -41,6 +44,7 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            onClick={closeBurgerMenu}
             to="/workExp"
             className={({ isActive }) =>
               `navigation__link ${isActive ? "navigation__link navigation__link_active" : ""}`
@@ -56,15 +60,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-//{
-/* <NavLink
-  onClick={closeBurgerMenu}
-  to="/"
-  className={({ isActive }) =>
-    `navigation-films__link ${isActive ? "navigation-films__link navigation-films__link_active" : ""}`
-  }
->
-  Главная
-</NavLink>; */
-//}

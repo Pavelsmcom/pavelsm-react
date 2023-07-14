@@ -1,21 +1,29 @@
 import React from "react";
-
+import { useState } from "react";
 import "./Header.css";
 
 import Navbar from "../Navbar/Navbar";
 import Resume from "../Resume/Resume";
 import Logo from "../Logo/Logo";
-// import Burger from './Burger';
+import Burger from "../Burger/Burger";
 
 function Header() {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+  function click() {
+    setIsBurgerOpen(!isBurgerOpen);
+  }
+
+  function handleCloseBurgerMenu() {
+    setIsBurgerOpen(false);
+  }
+
   return (
     <header className="head">
+      <Burger click={click} isBurgerOpen={isBurgerOpen} />
       <Logo />
-      <Navbar />
-      {/* <div className='burger__block'> */}
-      {/* <Burger/> */}
+      <Navbar isBurgerOpen={isBurgerOpen} closeBurgerMenu={handleCloseBurgerMenu} />
       <Resume />
-      {/* </div> */}
     </header>
   );
 }
