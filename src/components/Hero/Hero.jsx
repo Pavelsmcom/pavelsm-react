@@ -15,9 +15,9 @@ function Hero() {
           Pavel <span className="hero__second-name">Melekhin</span>
         </h1>
         <p className="hero__description">
-          I am excited about the development process and the opportunity to create new interesting projects, as well as
-          solve complex problems. Previously, I led a team and created medical devices, now I apply this experience on
-          the web.
+          I am a frontend developer. I am excited about the development process and the opportunity to create new
+          interesting projects, as well as solve complex problems. Previously, I led a team and created medical devices,
+          now I apply this experience on the web.
         </p>
         <nav>
           <ul className="hero__skills">

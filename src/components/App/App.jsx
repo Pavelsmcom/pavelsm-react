@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { useNavigate, useRoutes, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
 
@@ -15,13 +15,12 @@ import Experience from "../Experience/Experience";
 
 function App() {
   const navigate = useNavigate();
-
   const location = useLocation();
 
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  const minSwipeDistance = 250;
+  const minSwipeDistance = 150;
 
   const onTouchStart = (e) => {
     setTouchEnd(null);
@@ -48,30 +47,18 @@ function App() {
     }
   };
 
-  const element = useRoutes([
-    {
-      path: "/",
-      element: <Main />,
-    },
-    {
-      path: "/skills",
-      element: <Skills />,
-    },
-    {
-      path: "/portfolio",
-      element: <Portfolio />,
-    },
-    {
-      path: "/workExp",
-      element: <Experience />,
-    },
-  ]);
-
   return (
     <div className="App">
       <div className="page" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
         <Header />
-        <AnimatePresence mode="wait">{React.cloneElement(element, { key: location.pathname })}</AnimatePresence>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Main />} key={1} />
+            <Route path="/skills" element={<Skills />} key={2} />
+            <Route path="/portfolio" element={<Portfolio />} key={2} />
+            <Route path="/workExp" element={<Experience />} key={2} />
+          </Routes>
+        </AnimatePresence>
         <Footer />
       </div>
     </div>
