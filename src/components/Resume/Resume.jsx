@@ -3,7 +3,7 @@ import "./Resume.css";
 function Resume() {
   return (
     <>
-      <a href="#!" className="resume">
+      <a href="./frontend_developer_Melekhin_Pavel.pdf" target="_blank" className="resume">
         Resume
         <span>
           <span className="resume__circle"></span>
