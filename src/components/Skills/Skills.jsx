@@ -14,14 +14,18 @@ import mongoDB from "../../images/skills/mdb.png";
 import node from "../../images/skills/Nodejs.png";
 import c from "../../images/skills/c++.png";
 import asm from "../../images/skills/asm.png";
+import sass from "../../images/skills/sass.png";
+import redux from "../../images/skills/redux.png";
 
 const skills = [
   { title: "HTML", pic: html },
   { title: "CSS", pic: css },
+  { title: "SCSS", pic: sass },
   { title: "BEM Methodology", pic: bem },
   { title: "JavaScript", pic: js },
   { title: "TypeScript", pic: ts },
-  { title: "React.js", pic: react },
+  { title: "React", pic: react },
+  { title: "Redux", pic: redux },
   { title: "MongoDB", pic: mongoDB },
   { title: "Node.js", pic: node },
   { title: "C++/C", pic: c },
