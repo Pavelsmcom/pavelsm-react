@@ -112,8 +112,8 @@
   }
 
   .hero__photo {
-    width: calc(100% - 70px);
-    height: calc(100% - 70px);
+    width: 260px;
+    height: 260px;
   }
 
   .hero__skills {

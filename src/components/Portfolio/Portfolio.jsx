@@ -7,12 +7,14 @@ import hotel from "../../images/portfolio/hotelbooking.jpg";
 import kino from "../../images/portfolio/kino.jpg";
 import travel from "../../images/portfolio/travel.jpg";
 import howtolearn from "../../images/portfolio/howtolearn.jpg";
+import crm from "../../images/portfolio/crm.jpg";
 
 import TransitionEffect from "../TransitionEffect/TransitionEffect";
 
 const works = [
   { pic: kino, link: "https://movies-explorer.pavelsm.nomoredomains.monster/" },
   { pic: mesto, link: "https://pavelsmcom.github.io/mesto/" },
+  { pic: crm, link: "https://pavelsm.com" },
   { pic: travel, link: "https://pavelsmcom.github.io/russian-travel/" },
   { pic: howtolearn, link: "https://pavelsm.com/how-to-learn/index.html" },
   { pic: hotel, link: "https://pavelsmcom.github.io/HotelBooking/" },

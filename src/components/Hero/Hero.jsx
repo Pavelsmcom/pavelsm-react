@@ -31,7 +31,7 @@ function Hero() {
                 <img className="hero__skill" src={github} alt="GitHub" />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.codewars.com/users/ElvenSky"
                 className="hero__skill-codewars"
@@ -40,7 +40,7 @@ function Hero() {
               >
                 <img src="https://www.codewars.com/users/ElvenSky/badges/micro" alt="CodeWars" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
