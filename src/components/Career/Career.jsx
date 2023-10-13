@@ -1,30 +1,38 @@
-import "./Career.css";
+import './Career.css';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 const companies = [
   {
-    name: "Ya.Practicum",
-    post: "Frontend developer (student)",
-    time: "2022 - 2023",
-    skills: ["HTML", "CSS", "BEM", "JavaScript", "TypeScript", "React.js", "MongoDB", "Node.js", "Git"],
+    name: 'Commercial project',
+    post: 'Frontend developer',
+    time: '2023 - Present',
+    skills: ['HTML', 'CSS', 'SASS', 'BEM', 'JavaScript', 'React', 'StoryBook', 'Git'],
+    text: ['Took part in the development of a platform for managing the hiring process - a CRM system for HR, wich simplifies and automates their work.'],
+  },
+  {
+    name: 'Ya.Practicum',
+    post: 'Frontend developer (student)',
+    time: '2022 - 2023',
+    skills: ['HTML', 'CSS', 'BEM', 'JavaScript', 'React', 'MongoDB', 'Node.js', 'Git'],
     text: [
-      "I defended my diploma in Ya.Practicum with a degree in WEB development",
-      "Participated in team projects. Learned html|css, principles of working with asynchronous code, React.js framework, worked with databases.",
-      "Worked on the frontend and backend parts of several projects under the supervision of experienced mentors",
+      'I defended my diploma in Ya.Practicum with a degree in WEB development',
+      'Participated in team projects. Learned html|css, principles of working with asynchronous code, React.js framework, worked with databases.',
+      'Worked on the frontend and backend parts of several projects under the supervision of experienced mentors',
     ],
   },
   {
-    name: "ROSCOSMOS",
-    post: "Lead electronics hardware engineer",
-    time: "2011 - Present · Full-time",
-    skills: ["C++", "Asm"],
+    name: 'Roscosmos',
+    post: 'Lead electronics hardware engineer',
+    time: '2011 - Present · Full-time',
+    skills: ['C++', 'Asm'],
     text: [
-      "I Developed 4 medical products for newborns, put them into production, which saved a many life and changed the world for the better",
-      "Under my leadership, the development time has been reduced from 4 years to 2 years",
-      "I successfully managed a team of 5 people for 6 years, taught them C++ programming and refactored their code",
+      'I Developed software for microcontrollers in C++ and Asm. Conducted hundreds of code reviews',
+      'I Developed 4 medical products for newborns, put them into production, which saved a many life and changed the world for the better',
+      'Under my leadership, the development time has been reduced from 4 years to 2 years',
+      'I successfully managed a team of 5 people for 6 years',
     ],
   },
 ];
@@ -39,16 +47,10 @@ function Career() {
   function Company({ name, index }) {
     return (
       <li
-        className={companyVisible === index ? "career__switch-cell career__switch-cell_active" : "career__switch-cell"}
+        className={companyVisible === index ? 'career__switch-cell career__switch-cell_active' : 'career__switch-cell'}
         onClick={() => setCompanyVisible(index)}
       >
-        <p
-          className={
-            companyVisible === index ? "career__switch-text career__switch-text_active" : "career__switch-text"
-          }
-        >
-          {name}
-        </p>
+        <p className={companyVisible === index ? 'career__switch-text career__switch-text_active' : 'career__switch-text'}>{name}</p>
         {companyVisible === index && <p className="career__switch-arrow">></p>}
       </li>
     );

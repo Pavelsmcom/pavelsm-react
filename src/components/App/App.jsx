@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 
 import { AnimatePresence } from "framer-motion";
@@ -12,6 +12,7 @@ import Main from "../Main/Main";
 import Skills from "../Skills/Skills";
 import Portfolio from "../Portfolio/Portfolio";
 import Experience from "../Experience/Experience";
+import SwipeHint from "../SwipeHint/SwipeHint";
 
 function App() {
   const navigate = useNavigate();
@@ -19,6 +20,13 @@ function App() {
 
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
+  const [isSwipeHintVisible, setIsSwipeHintVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSwipeHintVisible(true);
+    }, 1600);
+  }, []);
 
   const minSwipeDistance = 150;
 
@@ -59,6 +67,7 @@ function App() {
             <Route path="/workExp" element={<Experience />} key={2} />
           </Routes>
         </AnimatePresence>
+        {isSwipeHintVisible && <SwipeHint />}
         <Footer />
       </div>
     </div>
