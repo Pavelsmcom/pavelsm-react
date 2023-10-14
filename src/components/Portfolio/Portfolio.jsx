@@ -14,7 +14,7 @@ import TransitionEffect from "../TransitionEffect/TransitionEffect";
 const works = [
   { pic: kino, link: "https://movies-explorer.pavelsm.nomoredomains.monster/" },
   { pic: mesto, link: "https://pavelsmcom.github.io/mesto/" },
-  { pic: crm, link: "https://pavelsm.com" },
+  { pic: crm, link: "" },
   { pic: travel, link: "https://pavelsmcom.github.io/russian-travel/" },
   { pic: howtolearn, link: "https://pavelsm.com/how-to-learn/index.html" },
   { pic: hotel, link: "https://pavelsmcom.github.io/HotelBooking/" },
@@ -45,9 +45,13 @@ function Card({ work }) {
       viewport={{ once: true, amount: 0.8 }}
     >
       <motion.div variants={cardVariants}>
-        <a href={work.link} target="_blank" rel="noreferrer">
+        {work.link === "" ? (
           <img src={work.pic} alt="portfolio work" />
-        </a>
+        ) : (
+          <a href={work.link} target="_blank" rel="noreferrer">
+            <img src={work.pic} alt="portfolio work" />
+          </a>
+        )}
       </motion.div>
     </motion.li>
   );
