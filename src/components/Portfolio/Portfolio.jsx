@@ -12,9 +12,9 @@ import crm from "../../images/portfolio/crm.jpg";
 import TransitionEffect from "../TransitionEffect/TransitionEffect";
 
 const works = [
+  { pic: crm, link: "" },
   { pic: kino, link: "https://movies-explorer.pavelsm.nomoredomains.monster/" },
   { pic: mesto, link: "https://pavelsmcom.github.io/mesto/" },
-  { pic: crm, link: "" },
   { pic: travel, link: "https://pavelsmcom.github.io/russian-travel/" },
   { pic: howtolearn, link: "https://pavelsm.com/how-to-learn/index.html" },
   { pic: hotel, link: "https://pavelsmcom.github.io/HotelBooking/" },
